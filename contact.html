@@ -4,24 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us</title>
-  <style>
-    /* Responsive iframe for Google Maps */
-    .map-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-    .map-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-  </style>
 </head>
 <body>
 
@@ -56,15 +38,14 @@
     <!-- Embedded Google Map -->
     <section>
       <h2>Conference Venue</h2>
-      <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.022308018217!2d-122.41941538468298!3d37.77492977975983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0b7c50e9%3A0xd0b7b8eec88b1350!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1670000000000"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="TechCon 2024 Venue - Moscone Center">
-        </iframe>
-      </div>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.022308018217!2d-122.41941538468298!3d37.77492977975983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0b7c50e9%3A0xd0b7b8eec88b1350!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1670000000000"
+        width="600" height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="TechCon 2024 Venue - Moscone Center">
+      </iframe>
     </section>
 
     <!-- Contact Us Form -->
@@ -84,4 +65,16 @@
         <textarea id="contact-message" name="contact-message" rows="5" required></textarea><br><br>
 
         <!-- Submit -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 TechCon. All rights reserved. <span>Copyright</span>.</p>
+  </footer>
+
+</body>
+</html>
 
